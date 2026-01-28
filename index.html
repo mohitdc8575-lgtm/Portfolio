@@ -6,65 +6,77 @@
     <title>Mohit | Mechanical Designer Portfolio</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --primary: #00d4ff; --text: #f8fafc; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; line-height: 1.6; }
-        .container { max-width: 1000px; margin: auto; }
-        header { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 20px; border: 1px solid #334155; margin-bottom: 30px; }
-        h1 { font-size: 3rem; color: var(--primary); margin: 0; letter-spacing: 2px; }
-        .skill-tag { background: rgba(0, 212, 255, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin: 5px; border: 1px solid var(--primary); }
-        .section-title { border-left: 4px solid var(--primary); padding-left: 15px; margin: 40px 0 20px; font-size: 1.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .card { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid #334155; transition: 0.3s; height: 100%; display: flex; flex-direction: column; }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
-        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
-        .btn { display: inline-block; padding: 12px 25px; background: var(--primary); color: var(--bg); text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
-        .btn:hover { opacity: 0.8; }
-        footer { text-align: center; margin-top: 50px; color: #64748b; font-size: 0.9rem; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        header { text-align: center; padding: 40px 20px; background: #1e293b; border-radius: 20px; margin-bottom: 30px; border: 1px solid #334155; }
+        h1 { font-size: 2.5rem; color: var(--primary); margin: 0; }
+        .skill-tag { background: rgba(0, 212, 255, 0.1); color: var(--primary); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin: 4px; border: 1px solid var(--primary); }
+        .section-title { border-left: 4px solid var(--primary); padding-left: 15px; margin: 30px 0 15px; font-size: 1.4rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid #334155; }
+        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .contact-icon { width: 24px; height: 24px; vertical-align: middle; margin: 0 10px; filter: brightness(0) invert(1); }
+        .btn { display: block; width: 200px; margin: 20px auto; padding: 12px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 8px; font-weight: bold; text-align: center; }
+        .btn:hover { opacity: 0.9; }
+        .info-text { color: #94a3b8; font-size: 0.95rem; margin: 5px 0; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>MOHIT</h1>
-            <p style="color: #94a3b8; font-size: 1.2rem;">Mechanical Design Engineer | Technical Programmer</p>
-            <div style="margin-top: 20px;">
-                <span class="skill-tag">AutoCAD</span>
-                <span class="skill-tag">SolidWorks</span>
-                <span class="skill-tag">Siemens NX</span>
-                <span class="skill-tag">C++</span>
+            <p style="color: #94a3b8;">Mechanical Design Engineer | BFSI Student</p>
+            <div style="margin-top: 15px;">
+                <span class="skill-tag">AutoCAD</span> <span class="skill-tag">SolidWorks</span>
+                <span class="skill-tag">Siemens NX</span> <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">MS Excel</span>
             </div>
         </header>
 
-        <h2 class="section-title">My Projects</h2>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="card">
+            <h3>Design Engineer (6 Months Internship/Work)</h3>
+            <p class="info-text">Worked on industrial components, creating 3D models and precise 2D drafting for manufacturing.</p>
+        </div>
+
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+            <h3>Graduation in BFSI</h3>
+            <p class="info-text">Pursuing degree after successful completion of 12th Standard.</p>
+        </div>
+
+        <h2 class="section-title">Featured Projects</h2>
         <div class="grid">
             <div class="card">
                 <img src="large.gif" alt="3D Design">
                 <h3>3D Component Design</h3>
-                <p>Specialized in 3D modeling and large-scale assemblies. Experienced in creating production-ready CAD models with a focus on DfM.</p>
+                <p class="info-text">Advanced assembly modeling and motion study using SolidWorks.</p>
             </div>
             <div class="card">
                 <img src="auto_cad.jpg" alt="Technical Drafting">
                 <h3>Technical Drafting</h3>
-                <p>Expertise in preparing detailed 2D engineering layouts and drawings. Proficient in GD&T for manufacturing precision.</p>
+                <p class="info-text">Precision 2D layouts and GD&T documentation in AutoCAD.</p>
             </div>
         </div>
 
-        <h2 class="section-title">Contact Information</h2>
+        <h2 class="section-title">Contact & Links</h2>
         <div class="card" style="text-align: center;">
-            <div style="margin-top: 15px;">
-    <a href="APKA_LINKEDIN_URL" target="_blank" style="margin-right: 15px; text-decoration: none; color: #f8fafc;">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20" style="vertical-align: middle;"> LinkedIn
-    </a>
-             
-    <a href="https://github.com/mohitdc8575-lgtm" target="_blank" style="text-decoration: none; color: #f8fafc;">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20" style="vertical-align: middle;"> GitHub
-    </a>
-</div>
-            <p>Email: <strong>mohitdc8575@gmail.com</strong></p>
-            <p>Location: India Faridabad Sector 55</p>
+            <p>📧 mohitdc8575@gmail.com</p>
+            <p>📞 +91 8700642404</p>
+            <div style="margin: 20px 0;">
+                <a href="https://github.com/mohitdc8575-lgtm" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="contact-icon" alt="GitHub">
+                </a>
+                <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="contact-icon" alt="LinkedIn">
+                </a>
+            </div>
             <a href="Resume.pdf" target="_blank" class="btn">📄 Download Resume</a>
         </div>
 
-        <footer>&copy; 2026 Mohit Portfolio | Made with Passion</footer>
+        <footer style="text-align: center; padding: 40px; color: #64748b;">
+            &copy; 2026 Mohit | Faridabad, India
+        </footer>
     </div>
 </body>
 </html>
