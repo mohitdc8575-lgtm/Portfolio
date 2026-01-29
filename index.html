@@ -6,74 +6,91 @@
     <title>Mohit | Mechanical Designer Portfolio</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --primary: #00d4ff; --text: #f8fafc; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; line-height: 1.6; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 15px; line-height: 1.6; }
         .container { max-width: 900px; margin: auto; }
-        header { text-align: center; padding: 40px 20px; background: #1e293b; border-radius: 20px; margin-bottom: 30px; border: 1px solid #334155; }
-        h1 { font-size: 2.5rem; color: var(--primary); margin: 0; }
+        
+        header { text-align: center; padding: 40px 20px; background: #1e293b; border-radius: 20px; border: 1px solid #334155; margin-bottom: 25px; }
+        h1 { font-size: 2.5rem; color: var(--primary); margin: 0; text-transform: uppercase; }
+        
         .skill-tag { background: rgba(0, 212, 255, 0.1); color: var(--primary); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin: 4px; border: 1px solid var(--primary); }
-        .section-title { border-left: 4px solid var(--primary); padding-left: 15px; margin: 30px 0 15px; font-size: 1.4rem; }
+        
+        .section-title { border-left: 4px solid var(--primary); padding-left: 15px; margin: 30px 0 15px; font-size: 1.4rem; color: var(--primary); }
+        
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid #334155; height: 100%; box-sizing: border-box; }
-        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
-        /* ICONS FIX */
-        .social-links { margin: 20px 0; display: flex; justify-content: center; gap: 30px; }
-        .contact-icon { width: 32px !important; height: 32px !important; transition: 0.3s; filter: brightness(0) invert(1); }
-        .contact-icon:hover { transform: scale(1.2); }
-        .btn { display: inline-block; padding: 12px 25px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; }
+        .card { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid #334155; }
+        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+
+        /* ICON SIZE FIXED HERE */
+        .social-box { margin: 20px 0; display: flex; justify-content: center; gap: 25px; }
+        .social-box img { width: 35px !important; height: 35px !important; filter: brightness(0) invert(1); transition: 0.3s; }
+        .social-box img:hover { transform: scale(1.1); }
+
+        .btn { display: inline-block; padding: 12px 30px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>MOHIT</h1>
-            <p style="color: #94a3b8;">Mechanical Design Engineer | BFSI Student</p>
-            <div style="margin-top: 15px;">
-                <span class="skill-tag">AutoCAD</span> <span class="skill-tag">SolidWorks</span>
-                <span class="skill-tag">Siemens NX</span> <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">MS Excel</span>
-            </div>
-        </header>
 
-        <h2 class="section-title">Professional Experience</h2>
+<div class="container">
+    <header>
+        <h1>MOHIT</h1>
+        <p style="color: #94a3b8; font-size: 1.1rem; margin: 10px 0;">Mechanical Design Engineer | BFSI Graduate</p>
+        <div>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">Siemens NX</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Excel</span>
+        </div>
+    </header>
+
+    <h2 class="section-title">Experience & Education</h2>
+    <div class="grid">
         <div class="card">
-            <h3>Design Engineer (6 Months)</h3>
-            <p>Industrial component modeling, assembly design, and 2D drafting for manufacturing.</p>
+            <h3>6 Months Design Experience</h3>
+            <p>Industrial component modeling, assembly design, and professional 2D drafting for manufacturing plants.</p>
         </div>
-
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="large.gif" alt="3D Design">
-                <h3>3D Component Design</h3>
-                <p>Advanced assembly modeling and motion study in SolidWorks.</p>
-            </div>
-            <div class="card">
-                <img src="auto_cad.jpg" alt="Technical Drafting">
-                <h3>Technical Drafting</h3>
-                <p>Precision 2D layouts and GD&T documentation in AutoCAD.</p>
-            </div>
+        <div class="card">
+            <h3>Graduation in BFSI</h3>
+            <p>Completed 12th and currently pursuing graduation with a focus on Banking and Finance (BFSI).</p>
         </div>
-
-        <h2 class="section-title">Contact & Links</h2>
-        <div class="card" style="text-align: center;">
-            <p>📧 <strong>mohitdc8575@gmail.com</strong></p>
-            <p>📞 <strong>+91 8700642404</strong></p>
-            
-            <div class="social-links">
-                <a href="https://github.com/mohitdc8575-lgtm" target="_blank" title="GitHub">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="contact-icon">
-                </a>
-                <a href="INSERT_YOUR_LINKEDIN_URL_HERE" target="_blank" title="LinkedIn">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="contact-icon">
-                </a>
-            </div>
-
-            <a href="Resume.pdf" target="_blank" class="btn">📄 Download Resume</a>
-        </div>
-
-        <footer style="text-align: center; padding: 40px; color: #64748b; font-size: 0.8rem;">
-            &copy; 2026 Mohit | Faridabad, India
-        </footer>
     </div>
+
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="large.gif" alt="3D Design">
+            <h3>3D Component Design</h3>
+            <p>Precision 3D modeling and motion analysis using SolidWorks/NX.</p>
+        </div>
+        <div class="card">
+            <img src="auto_cad.jpg" alt="Technical Drafting">
+            <h3>Technical Drafting</h3>
+            <p>Expertise in 2D engineering layouts and GD&T documentation.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Contact & Links</h2>
+    <div class="card" style="text-align: center;">
+        <p style="margin: 5px 0;">📧 mohitdc8575@gmail.com</p>
+        <p style="margin: 5px 0;">📞 +91 8700642404</p>
+        <p style="margin: 5px 0;">📍 Faridabad, Sector 55</p>
+
+        <div class="social-box">
+            <a href="APKA_LINKEDIN_URL_YAHAN_DALO" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/mohitdc8575-lgtm" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+        </div>
+
+        <a href="Resume.pdf" target="_blank" class="btn">📄 Download Resume</a>
+    </div>
+
+    <footer style="text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem;">
+        &copy; 2026 Mohit Portfolio
+    </footer>
+</div>
+
 </body>
 </html>
