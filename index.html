@@ -3,80 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohit | Mechanical Designer Portfolio</title>
+    <title>Mohit Baghel | CAD Designer at ABB</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --primary: #00d4ff; --text: #f8fafc; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 15px; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 15px; line-height: 1.6; }
         .container { max-width: 900px; margin: auto; }
-        
-        header { text-align: center; padding: 40px 20px; background: #1e293b; border-radius: 20px; border: 1px solid #334155; margin-bottom: 25px; }
-        h1 { font-size: 2.5rem; color: var(--primary); margin: 0; text-transform: uppercase; }
-        
-        .skill-tag { background: rgba(0, 212, 255, 0.1); color: var(--primary); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin: 4px; border: 1px solid var(--primary); }
-        
-        .section-title { border-left: 4px solid var(--primary); padding-left: 15px; margin: 30px 0 15px; font-size: 1.4rem; color: var(--primary); }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid #334155; }
-        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
-
-        /* ICON SIZE FIXED HERE */
-        .social-box { margin: 20px 0; display: flex; justify-content: center; gap: 25px; }
-        .social-box img { width: 35px !important; height: 35px !important; filter: brightness(0) invert(1); transition: 0.3s; }
-        .social-box img:hover { transform: scale(1.1); }
-
-        .btn { display: inline-block; padding: 12px 30px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px; }
+        header { text-align: center; padding: 50px 20px; background: #1e293b; border-radius: 20px; border: 1px solid #334155; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        h1 { font-size: 2.8rem; color: var(--primary); margin: 0; letter-spacing: 1px; }
+        .skill-tag { background: rgba(0, 212, 255, 0.1); color: var(--primary); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin: 5px; border: 1px solid var(--primary); }
+        .section-title { border-left: 5px solid var(--primary); padding-left: 15px; margin: 40px 0 20px; font-size: 1.6rem; color: var(--primary); text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: var(--card); padding: 25px; border-radius: 15px; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; display: block; }
+        .social-box { margin: 25px 0; display: flex; justify-content: center; gap: 30px; align-items: center; }
+        .social-box a { display: inline-block; transition: 0.3s; }
+        .social-box img { width: 40px !important; height: 40px !important; filter: brightness(0) invert(1); }
+        .social-box a:hover { transform: scale(1.2); }
+        .btn { display: inline-block; padding: 14px 35px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 10px; font-weight: bold; margin-top: 15px; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: #fff; transform: scale(1.05); }
+        footer { text-align: center; padding: 50px; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; margin-top: 50px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>MOHIT</h1>
-        <p style="color: #94a3b8; font-size: 1.1rem; margin: 10px 0;">Mechanical Design Engineer | BFSI Graduate</p>
-        <div>
+        <h1>MOHIT BAGHEL</h1>
+        <p style="color: #94a3b8; font-size: 1.2rem; margin: 15px 0;">Computer Aided Design Designer at <strong>ABB</strong></p>
+        <div style="margin-top: 20px;">
             <span class="skill-tag">AutoCAD</span>
             <span class="skill-tag">SolidWorks</span>
             <span class="skill-tag">Siemens NX</span>
             <span class="skill-tag">C++</span>
-            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">MS Excel</span>
+            <span class="skill-tag">BFSI</span>
         </div>
     </header>
 
     <h2 class="section-title">Experience & Education</h2>
     <div class="grid">
         <div class="card">
-            <h3>6 Months Design Experience</h3>
-            <p>Industrial component modeling, assembly design, and professional 2D drafting for manufacturing plants.</p>
+            <h3 style="color: var(--primary); margin-top: 0;">CAD Designer @ ABB</h3>
+            <p>6 months of professional experience in industrial designing, creating complex 3D models and high-precision 2D drafts for manufacturing.</p>
         </div>
         <div class="card">
-            <h3>Graduation in BFSI</h3>
-            <p>Completed 12th and currently pursuing graduation with a focus on Banking and Finance (BFSI).</p>
+            <h3 style="color: var(--primary); margin-top: 0;">Education</h3>
+            <p>Completed 12th standard and currently pursuing Graduation in <strong>BFSI</strong> (Banking, Financial Services and Insurance).</p>
         </div>
     </div>
 
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Design Projects</h2>
     <div class="grid">
         <div class="card">
-            <img src="large.gif" alt="3D Design">
-            <h3>3D Component Design</h3>
-            <p>Precision 3D modeling and motion analysis using SolidWorks/NX.</p>
+            <img src="large.gif" alt="3D Component Design">
+            <h3>3D Component Modeling</h3>
+            <p>Advanced assembly and motion analysis of industrial components using SolidWorks and Siemens NX.</p>
         </div>
         <div class="card">
             <img src="auto_cad.jpg" alt="Technical Drafting">
             <h3>Technical Drafting</h3>
-            <p>Expertise in 2D engineering layouts and GD&T documentation.</p>
+            <p>Detailed engineering layouts, floor plans, and GD&T documentation using AutoCAD.</p>
         </div>
     </div>
 
-    <h2 class="section-title">Contact & Links</h2>
-    <div class="card" style="text-align: center;">
-        <p style="margin: 5px 0;">📧 mohitdc8575@gmail.com</p>
-        <p style="margin: 5px 0;">📞 +91 8700642404</p>
-        <p style="margin: 5px 0;">📍 Faridabad, Sector 55</p>
+    <h2 class="section-title">Contact & Professional Links</h2>
+    <div class="card" style="text-align: center; background: linear-gradient(145deg, #1e293b, #0f172a);">
+        <p style="font-size: 1.1rem; margin: 10px 0;">📧 <strong>mohitdc8575@gmail.com</strong></p>
+        <p style="font-size: 1.1rem; margin: 10px 0;">📞 <strong>+91 8700642404</strong></p>
+        <p style="font-size: 1.1rem; margin: 10px 0;">📍 Faridabad, Sector 55, Haryana</p>
 
         <div class="social-box">
-            <div class="social-box">
             <a href="https://www.linkedin.com/in/mohit-baghel-752910390/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
             </a>
@@ -84,13 +81,12 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
             </a>
         </div>
-        </div>
 
-        <a href="Resume.pdf" target="_blank" class="btn">📄 Download Resume</a>
+        <a href="Resume.pdf" target="_blank" class="btn">📄 View Professional Resume</a>
     </div>
 
-    <footer style="text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem;">
-        &copy; 2026 Mohit Portfolio
+    <footer>
+        &copy; 2026 Mohit Baghel Portfolio | Designed for Engineering Excellence
     </footer>
 </div>
 
